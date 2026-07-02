@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — RockSteady</title>
+<meta name="description" content="Have a question, some feedback, or need a hand? Send the RockSteady team a message and we'll get back to you as soon as we can.">
+<link rel="icon" href="../assets/img/emblem.png">
+<link rel="stylesheet" href="../css/site.css">
+<style>
+  @media(max-width:860px){ .cgrid{grid-template-columns:1fr !important;gap:26px !important;} }
+</style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="bar">
+      <a href="../index.html" class="brand"><img src="../assets/img/emblem.png" alt="RockSteady"><span>RockSteady</span></a>
+      <nav class="site-nav">
+        <input type="checkbox" id="navmenu" class="nav-cb" hidden>
+        <label for="navmenu" class="nav-burger" aria-label="Toggle menu"><span></span></label>
+        <div class="links">
+          <a href="../index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="guide.html">Guide</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+          <a href="https://apps.apple.com/app/id6757501581" class="cta-pill">Get the app</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <p class="eyebrow">Contact</p>
+    <h1>Get in touch</h1>
+    <p class="lede">Have a question, some feedback, or need a hand? Send us a message and we'll get back to you as soon as we can.</p>
+  </section>
+
+  <!-- CONTACT GRID -->
+  <section class="wrap" style="max-width:1080px;padding-top:32px;padding-bottom:30px;">
+    <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:36px;align-items:start;" class="cgrid">
+
+      <!-- FORM CARD -->
+      <div class="card" style="padding:clamp(24px,3.5vw,38px);">
+        <div id="formWrap">
+          <h2 style="font-weight:800;font-size:clamp(23px,3vw,29px);letter-spacing:-0.02em;margin-bottom:6px;">Send us a message</h2>
+          <p style="font-size:14.5px;color:var(--brown);margin-bottom:26px;">Fields marked <span style="color:var(--rust);">*</span> are required.</p>
+          <form id="contactForm" novalidate>
+            <div class="field" id="f-name">
+              <label for="name">Your name <span class="req">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Enter your name">
+              <span class="err">Please enter your name.</span>
+            </div>
+            <div class="field" id="f-email">
+              <label for="email">Email address <span class="req">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+              <span class="err">Please enter a valid email address.</span>
+              <span class="hint">We'll never share your email with anyone else.</span>
+            </div>
+            <div class="field" id="f-topic">
+              <label for="topic">Topic <span class="req">*</span></label>
+              <select id="topic" name="topic">
+                <option value="">Select a topic…</option>
+                <option value="general">General inquiry</option>
+                <option value="support">Technical support</option>
+                <option value="bug">Report a bug</option>
+                <option value="feature">Feature request</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="err">Please choose a topic.</span>
+            </div>
+            <div class="field" id="f-message" style="margin-bottom:24px;">
+              <label for="message">Message <span class="req">*</span></label>
+              <textarea id="message" name="message" placeholder="Tell us what's on your mind…"></textarea>
+              <span class="err">Please enter a message.</span>
+            </div>
+            <button type="submit" class="btn-submit">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              Send message
+            </button>
+          </form>
+        </div>
+        <div id="successWrap" style="display:none;text-align:center;padding:34px 8px;">
+          <div style="width:66px;height:66px;border-radius:50%;background:var(--moss);border:2px solid var(--line);display:flex;align-items:center;justify-content:center;margin:0 auto 22px;"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#EFE6D2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg></div>
+          <h3 style="font-weight:800;font-size:27px;letter-spacing:-0.02em;margin-bottom:12px;">Message sent</h3>
+          <p style="font-size:15.5px;line-height:1.65;color:var(--body);max-width:30em;margin:0 auto 24px;">Thank you for reaching out. We've received your message and will get back to you within 1&ndash;2 business days.</p>
+          <a href="../index.html" class="btn-rust" style="box-shadow:3px 3px 0 var(--line);">Back to home</a>
+        </div>
+      </div>
+
+      <!-- INFO SIDEBAR -->
+      <aside style="display:flex;flex-direction:column;gap:18px;">
+        <div class="card" style="padding:24px;">
+          <h3 style="margin-bottom:10px;">Response time</h3>
+          <p style="margin-bottom:16px;">We aim to respond to every message within 1&ndash;2 business days. For urgent technical issues, pick &ldquo;Technical support&rdquo; as your topic.</p>
+          <div style="display:flex;align-items:center;gap:10px;background:var(--paper);border:2px solid var(--line);border-radius:12px;padding:11px 14px;">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--moss)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <span style="font-size:14px;font-weight:700;color:var(--ink);">Average response: 24 hours</span>
+          </div>
+        </div>
+
+        <div class="card" style="padding:24px;">
+          <h3 style="margin-bottom:14px;">Common questions</h3>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div>
+              <p style="font-size:14.5px;font-weight:700;color:var(--ink);margin-bottom:5px;">How do I reset my password?</p>
+              <p style="font-size:13.5px;line-height:1.55;color:var(--body);">Use &ldquo;Forgot Password?&rdquo; on the sign-in screen. If you signed up with Apple, your sign-in is managed by Apple &mdash; there's no separate password.</p>
+            </div>
+            <div>
+              <p style="font-size:14.5px;font-weight:700;color:var(--ink);margin-bottom:5px;">Is my data backed up?</p>
+              <p style="font-size:13.5px;line-height:1.55;color:var(--body);">Activity history and GPS routes stay on your device, and Apple Watch sessions sync through your private iCloud. Anything you share socially is stored securely on our backend.</p>
+            </div>
+            <div>
+              <p style="font-size:14.5px;font-weight:700;color:var(--ink);margin-bottom:5px;">Can I use RockSteady offline?</p>
+              <p style="font-size:13.5px;line-height:1.55;color:var(--body);">Yes &mdash; tracking and viewing your history work offline. Social features need an internet connection.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:var(--brown);color:#E5DAC4;border:2.5px solid var(--line);border-radius:18px;padding:24px;box-shadow:5px 5px 0 var(--line);">
+          <h3 style="font-weight:800;font-size:20px;letter-spacing:-0.02em;margin-bottom:8px;color:#F4ECDA;">Prefer email?</h3>
+          <p style="font-size:14px;line-height:1.6;color:#C9BCA3;margin-bottom:14px;">Reach the team directly and we'll pick it up from there.</p>
+          <a href="mailto:seanc@rocksteady-fitness.com" style="display:inline-flex;align-items:center;gap:9px;color:#F4ECDA;text-decoration:none;font-weight:700;font-size:14.5px;border-bottom:2px solid var(--gold);padding-bottom:2px;">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>
+            seanc@rocksteady-fitness.com
+          </a>
+        </div>
+
+        <div class="card" style="padding:24px;">
+          <h3 style="margin-bottom:10px;">Before you write</h3>
+          <p>Many questions are answered in our <a href="guide.html" class="ulink">App Guide</a> &mdash; step-by-step walkthroughs for every part of the app.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="cols">
+      <div class="brandcol">
+        <div class="lockup"><img src="../assets/img/emblem.png" alt=""><span class="name">RockSteady</span></div>
+        <p class="tag">Push your rock. Stay steady.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <div class="linklist">
+          <a href="../index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="guide.html">App Guide</a>
+        </div>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <div class="linklist">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="baseline"><div class="inner"><p>© 2026 RockSteady — All rights reserved.</p></div></div>
+  </footer>
+
+  <script>
+    (function(){
+      var form = document.getElementById('contactForm');
+      var val = function(n){ var el = form.elements[n]; return el && el.value ? el.value.trim() : ''; };
+      var setInvalid = function(id, bad){ document.getElementById(id).classList.toggle('invalid', bad); };
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        var errName = !val('name');
+        var email = val('email');
+        var errEmail = !email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email);
+        var errTopic = !val('topic');
+        var errMessage = !val('message');
+        setInvalid('f-name', errName);
+        setInvalid('f-email', errEmail);
+        setInvalid('f-topic', errTopic);
+        setInvalid('f-message', errMessage);
+        if (errName || errEmail || errTopic || errMessage) return;
+        document.getElementById('formWrap').style.display = 'none';
+        document.getElementById('successWrap').style.display = 'block';
+      });
+    })();
+  </script>
+
+</body>
+</html>

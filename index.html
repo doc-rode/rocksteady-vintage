@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RockSteady — Push your rock. Stay steady.</title>
+<meta name="description" content="A field companion for strength, cardio, recovery and sport — tracked without the noise, and kept on your own device. On iPhone & Apple Watch.">
+<link rel="icon" href="assets/img/emblem.png">
+<link rel="stylesheet" href="css/site.css">
+<style>
+  @media(max-width:900px){
+    .vp-hero{grid-template-columns:1fr !important;gap:36px !important;text-align:center;}
+    .vp-hero .vp-badge{order:-1;margin:0 auto;}
+    .vp-hero .vp-ctas{justify-content:center;}
+    .vp-entry{grid-template-columns:1fr !important;gap:28px !important;text-align:center;}
+    .vp-entry .vp-fimg{order:-1 !important;}
+    .vp-entry .vp-checks{align-items:center;}
+    .vp-watch{grid-template-columns:1fr !important;gap:40px !important;text-align:center;}
+    .vp-watch .vp-checks{align-items:center;}
+    .vp-mini{grid-template-columns:1fr !important;}
+  }
+  @media(max-width:560px){ .vp-h1{font-size:clamp(42px,13vw,58px) !important;} .vp-watchcluster{transform:scale(.84);} }
+  @media(max-width:460px){
+    .trace-stats{grid-template-columns:1fr !important;gap:0 !important;}
+    .trace-stats > div:nth-child(2){border-left:none !important;border-top:2px dashed var(--hairline,#C2B591);margin-top:22px;padding-top:22px;}
+  }
+</style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="bar">
+      <a href="index.html" class="brand">
+        <img src="assets/img/emblem.png" alt="RockSteady">
+        <span>RockSteady</span>
+      </a>
+      <nav class="site-nav">
+        <input type="checkbox" id="navmenu" class="nav-cb" hidden>
+        <label for="navmenu" class="nav-burger" aria-label="Toggle menu"><span></span></label>
+        <div class="links">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="pages/about.html">About</a>
+          <a href="pages/guide.html">Guide</a>
+          <a href="pages/privacy.html">Privacy</a>
+          <a href="pages/contact.html">Contact</a>
+          <a href="https://apps.apple.com/app/id6757501581" class="cta-pill">Get the app</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" style="max-width:1200px;margin:0 auto;padding:64px 26px 70px;">
+    <div style="display:grid;grid-template-columns:1.25fr 1fr;gap:60px;align-items:center;" class="vp-hero">
+      <div>
+        <div style="display:inline-flex;align-items:center;gap:9px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--rust,#A8431E);border:2px solid var(--rust,#A8431E);border-radius:999px;padding:6px 14px;margin-bottom:26px;">
+          <span style="width:7px;height:7px;border-radius:50%;background:var(--rust,#A8431E);"></span> No. 01 · Est. 2026
+        </div>
+        <h1 class="vp-h1" style="font-weight:800;font-size:clamp(50px,7.6vw,96px);line-height:0.94;letter-spacing:-0.03em;">Push your rock.<br><span style="color:var(--moss,#3A5A3C);">Stay steady.</span></h1>
+        <p style="font-size:clamp(17px,1.8vw,20px);line-height:1.55;color:#5C4D38;max-width:40ch;margin:24px 0 32px;">A field companion for strength, cardio, recovery and sport — tracked without the noise, and kept on your own device.</p>
+        <div style="display:flex;align-items:center;gap:15px;flex-wrap:wrap;" class="vp-ctas">
+          <a href="https://apps.apple.com/app/id6757501581" aria-label="Download on the App Store" style="display:inline-flex;text-decoration:none;">
+            <img src="assets/img/appstore-badge-black.svg" alt="Download on the App Store" style="height:52px;width:auto;display:block;">
+          </a>
+          <span style="font-family:'Space Mono',monospace;font-size:12.5px;color:#7A6A4F;line-height:1.4;">7-day trial,<br>then $4.99/mo</span>
+        </div>
+      </div>
+      <div class="vp-badge" style="position:relative;display:flex;justify-content:center;">
+        <div style="position:absolute;inset:0;margin:auto;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(58,90,60,.16),transparent 68%);"></div>
+        <div style="position:relative;width:330px;max-width:78vw;">
+          <img src="assets/img/emblem.png" alt="RockSteady emblem" style="display:block;width:100%;height:auto;filter:drop-shadow(0 18px 26px rgba(58,46,31,.28));">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAMP STRIP -->
+  <section style="background:var(--moss,#3A5A3C);color:#EFE6D2;border-top:3px solid #2C4630;border-bottom:3px solid #2C4630;">
+    <div style="max-width:1200px;margin:0 auto;padding:20px 26px;display:flex;gap:38px;justify-content:center;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;">
+      <span>Strength</span><span style="color:var(--gold,#CB8B2E);">●</span>
+      <span>Cardio</span><span style="color:var(--gold,#CB8B2E);">●</span>
+      <span>Recovery</span><span style="color:var(--gold,#CB8B2E);">●</span>
+      <span>Sport</span><span style="color:var(--gold,#CB8B2E);">●</span>
+      <span>On-device</span>
+    </div>
+  </section>
+
+  <!-- PRIVACY — LEAVE NO TRACE (promoted) -->
+  <section id="privacy" style="background:#E8E1CE;border-top:3px solid #D6CCB2;border-bottom:3px solid #D6CCB2;">
+    <div style="max-width:1000px;margin:0 auto;padding:clamp(64px,9vw,100px) 26px;text-align:center;">
+      <p style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.24em;text-transform:uppercase;color:var(--moss,#3A5A3C);margin-bottom:22px;">Privacy by design</p>
+      <h2 style="font-weight:800;font-size:clamp(44px,8vw,88px);line-height:0.93;letter-spacing:-0.035em;color:var(--ink,#3A2E1F);margin-bottom:24px;">Leave no trace.</h2>
+      <p style="font-size:clamp(16px,1.7vw,19px);line-height:1.6;color:var(--body,#5C4D38);max-width:52ch;margin:0 auto 44px;">Every rep, run and rest day stays on your device — we can't see it, and we don't want to. No account to mine, no profile with your name on it, nothing to sell.</p>
+      <div class="trace-stats" style="max-width:520px;margin:0 auto 40px;padding:30px 0;border-top:2px dashed var(--hairline,#C2B591);border-bottom:2px dashed var(--hairline,#C2B591);display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+        <div style="text-align:center;">
+          <div style="font-weight:800;font-size:clamp(50px,9vw,76px);line-height:1;color:var(--moss,#3A5A3C);letter-spacing:-0.02em;">0</div>
+          <div style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--brown,#4A3826);margin-top:8px;">Trackers</div>
+        </div>
+        <div style="text-align:center;border-left:2px dashed var(--hairline,#C2B591);">
+          <div style="font-weight:800;font-size:clamp(50px,9vw,76px);line-height:1;color:var(--moss,#3A5A3C);letter-spacing:-0.02em;">100%</div>
+          <div style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--brown,#4A3826);margin-top:8px;">On your device</div>
+        </div>
+      </div>
+      <a href="pages/privacy.html" style="color:var(--moss,#3A5A3C);font-weight:700;font-size:15px;text-decoration:none;border-bottom:2px solid var(--moss,#3A5A3C);padding-bottom:2px;">How your data stays yours →</a>
+    </div>
+  </section>
+
+  <!-- PHOTO BAND 01 -->
+  <section style="position:relative;border-bottom:3px solid #2C4630;">
+    <img src="assets/img/photo-climbing.jpg" alt="Two climbers smiling at each other on an indoor bouldering wall" style="display:block;width:100%;height:clamp(320px,52vh,540px);object-fit:cover;object-position:center 30%;">
+    <div style="position:absolute;left:0;bottom:0;width:100%;padding:18px 26px;background:linear-gradient(180deg,transparent,rgba(28,27,24,.6));">
+      <p style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:#EFE6D2;"><span style="color:var(--gold,#CB8B2E);">Fig. 01</span> — On the wall</p>
+    </div>
+  </section>
+
+  <!-- FIELD GUIDE -->
+  <section id="field" style="max-width:1140px;margin:0 auto;padding:84px 26px 40px;">
+    <div style="text-align:center;margin-bottom:56px;">
+      <p style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:var(--rust,#A8431E);margin-bottom:14px;">The Field Guide</p>
+      <h2 style="font-weight:800;font-size:clamp(32px,4.6vw,54px);line-height:0.98;letter-spacing:-0.03em;">Four disciplines, one trail</h2>
+    </div>
+
+    <!-- 01 Strength -->
+    <div class="vp-entry" style="display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center;">
+      <div>
+        <p style="font-family:'Space Mono',monospace;font-size:12.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold,#CB8B2E);margin-bottom:14px;">No. 01 — Strength</p>
+        <h3 style="font-weight:800;font-size:clamp(26px,3.4vw,40px);line-height:1.02;letter-spacing:-0.025em;margin-bottom:14px;">Workouts that fit your life</h3>
+        <p style="font-size:16.5px;line-height:1.58;color:#5C4D38;margin-bottom:22px;max-width:42ch;">A full exercise library, custom routines, or a program built for you. Track every set with progressive overload in mind — no spreadsheet required.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:11px;" class="vp-checks">
+          <li style="display:flex;gap:10px;align-items:center;font-size:15px;color:#3A2E1F;font-weight:500;"><span style="color:var(--moss,#3A5A3C);font-weight:800;">✦</span> Custom workouts &amp; exercises</li>
+          <li style="display:flex;gap:10px;align-items:center;font-size:15px;color:#3A2E1F;font-weight:500;"><span style="color:var(--moss,#3A5A3C);font-weight:800;">✦</span> Guided programs: Push, Pull, Legs, MetCon</li>
+          <li style="display:flex;gap:10px;align-items:center;font-size:15px;color:#3A2E1F;font-weight:500;"><span style="color:var(--moss,#3A5A3C);font-weight:800;">✦</span> Yoga, Pilates &amp; mobility classes</li>
+        </ul>
+      </div>
+      <div class="vp-fimg" style="display:flex;justify-content:center;">
+        <div style="position:relative;background:#EBDFC4;border:2.5px solid #3A2E1F;border-radius:18px;padding:24px;box-shadow:5px 5px 0 #3A2E1F;">
+          <span style="position:absolute;top:-13px;left:18px;background:var(--gold,#CB8B2E);color:#3A2E1F;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border:2px solid #3A2E1F;border-radius:999px;">Strength</span>
+          <div style="width:214px;flex:none;border-radius:28px;background:#11181d;padding:7px;"><div style="border-radius:22px;overflow:hidden;background:#000;"><img src="assets/img/app-strength.png" alt="Workout tracker" style="display:block;width:100%;height:auto;"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="perf" style="margin:56px 0;"></div>
+
+    <!-- 02 Cardio -->
+    <div class="vp-entry" style="display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center;">
+      <div class="vp-fimg" style="display:flex;justify-content:center;">
+        <div style="position:relative;background:#EBDFC4;border:2.5px solid #3A2E1F;border-radius:18px;padding:24px;box-shadow:5px 5px 0 #3A2E1F;">
+          <span style="position:absolute;top:-13px;left:18px;background:var(--rust,#A8431E);color:#EFE6D2;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border:2px solid #3A2E1F;border-radius:999px;">Cardio</span>
+          <div style="width:214px;flex:none;border-radius:28px;background:#11181d;padding:7px;"><div style="border-radius:22px;overflow:hidden;background:#000;"><img src="assets/img/app-cardio.png" alt="Cardio tracker" style="display:block;width:100%;height:auto;"></div></div>
+        </div>
+      </div>
+      <div>
+        <p style="font-family:'Space Mono',monospace;font-size:12.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold,#CB8B2E);margin-bottom:14px;">No. 02 — Cardio</p>
+        <h3 style="font-weight:800;font-size:clamp(26px,3.4vw,40px);line-height:1.02;letter-spacing:-0.025em;margin-bottom:14px;">Outdoors with GPS, indoors on a timer</h3>
+        <p style="font-size:16.5px;line-height:1.58;color:#5C4D38;margin-bottom:22px;max-width:42ch;">Run, walk, ruck or ride with live GPS and a map of your route. On the treadmill or bike, timer-based logging keeps indoor sessions just as simple.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:11px;" class="vp-checks">
+          <li style="display:flex;gap:10px;align-items:center;font-size:15px;color:#3A2E1F;font-weight:500;"><span style="color:var(--moss,#3A5A3C);font-weight:800;">✦</span> Live GPS tracking &amp; route maps</li>
+          <li style="display:flex;gap:10px;align-items:center;font-size:15px;color:#3A2E1F;font-weight:500;"><span style="color:var(--moss,#3A5A3C);font-weight:800;">✦</span> Indoor timer sessions with notes</li>
+          <li style="display:flex;gap:10px;align-items:center;font-size:15px;color:#3A2E1F;font-weight:500;"><span style="color:var(--moss,#3A5A3C);font-weight:800;">✦</span> Distance, pace &amp; session history</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="perf" style="margin:56px 0;"></div>
+
+    <!-- 03 Recovery -->
+    <div class="vp-entry" style="display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center;">
+      <div>
+        <p style="font-family:'Space Mono',monospace;font-size:12.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold,#CB8B2E);margin-bottom:14px;">No. 03 — Recovery</p>
+        <h3 style="font-weight:800;font-size:clamp(26px,3.4vw,40px);line-height:1.02;letter-spacing:-0.025em;margin-bottom:14px;">Rest is part of the work</h3>
+        <p style="font-size:16.5px;line-height:1.58;color:#5C4D38;margin-bottom:22px;max-width:42ch;">Log stretching, meditation, foam rolling and rest days alongside training. RockSteady treats recovery as something to celebrate — not skip.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:11px;" class="vp-checks">
+          <li style="display:flex;gap:10px;align-items:center;font-size:15px;color:#3A2E1F;font-weight:500;"><span style="color:var(--moss,#3A5A3C);font-weight:800;">✦</span> Track mobility, meditation &amp; rest</li>
+          <li style="display:flex;gap:10px;align-items:center;font-size:15px;color:#3A2E1F;font-weight:500;"><span style="color:var(--moss,#3A5A3C);font-weight:800;">✦</span> A calendar that rewards consistency</li>
+          <li style="display:flex;gap:10px;align-items:center;font-size:15px;color:#3A2E1F;font-weight:500;"><span style="color:var(--moss,#3A5A3C);font-weight:800;">✦</span> See your effort compound over time</li>
+        </ul>
+      </div>
+      <div class="vp-fimg" style="display:flex;justify-content:center;">
+        <div style="position:relative;background:#EBDFC4;border:2.5px solid #3A2E1F;border-radius:18px;padding:24px;box-shadow:5px 5px 0 #3A2E1F;">
+          <span style="position:absolute;top:-13px;left:18px;background:var(--moss,#3A5A3C);color:#EFE6D2;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border:2px solid #3A2E1F;border-radius:999px;">Recovery</span>
+          <div style="width:214px;flex:none;border-radius:28px;background:#11181d;padding:7px;"><div style="border-radius:22px;overflow:hidden;background:#000;"><img src="assets/img/app-recovery.png" alt="Recovery tracker" style="display:block;width:100%;height:auto;"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCIPLINE EMBLEMS -->
+  <section style="max-width:1000px;margin:0 auto;padding:30px 26px 26px;">
+    <p style="font-family:'Space Mono',monospace;font-size:12.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold,#CB8B2E);text-align:center;margin-bottom:8px;">Built around your week</p>
+    <h2 style="font-weight:800;font-size:clamp(26px,3.6vw,42px);line-height:1.0;letter-spacing:-0.025em;text-align:center;margin-bottom:40px;">The whole routine, in one calm place.</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:30px;justify-items:center;">
+      <figure style="margin:0;text-align:center;">
+        <img src="assets/img/sloth-strength.png" alt="Sloth flipping a tire" style="display:block;width:100%;max-width:158px;aspect-ratio:1/1;object-fit:contain;margin:0 auto;filter:drop-shadow(0 6px 10px rgba(58,46,31,.22));">
+        <figcaption style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#4A3826;margin-top:12px;">Strength</figcaption>
+      </figure>
+      <figure style="margin:0;text-align:center;">
+        <img src="assets/img/sloth-cardio.png" alt="Sloth riding a mountain bike" style="display:block;width:100%;max-width:158px;aspect-ratio:1/1;object-fit:contain;margin:0 auto;filter:drop-shadow(0 6px 10px rgba(58,46,31,.22));">
+        <figcaption style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#4A3826;margin-top:12px;">Cardio</figcaption>
+      </figure>
+      <figure style="margin:0;text-align:center;">
+        <img src="assets/img/sloth-recovery.png" alt="Sloth relaxing in a sauna" style="display:block;width:100%;max-width:158px;aspect-ratio:1/1;object-fit:contain;margin:0 auto;filter:drop-shadow(0 6px 10px rgba(58,46,31,.22));">
+        <figcaption style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#4A3826;margin-top:12px;">Recovery</figcaption>
+      </figure>
+      <figure style="margin:0;text-align:center;">
+        <img src="assets/img/sloth-sport.png" alt="Sloth climbing a bouldering wall" style="display:block;width:100%;max-width:158px;aspect-ratio:1/1;object-fit:contain;margin:0 auto;filter:drop-shadow(0 6px 10px rgba(58,46,31,.22));">
+        <figcaption style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#4A3826;margin-top:12px;">Sport</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- APPLE WATCH -->
+  <section id="watchSection" style="background:var(--brown,#4A3826);color:#EFE6D2;border-top:3px solid #2E2114;">
+    <div id="watch" style="max-width:1140px;margin:0 auto;padding:88px 26px;">
+      <div style="display:grid;grid-template-columns:1.05fr 1fr;gap:54px;align-items:center;" class="vp-watch">
+        <div>
+          <p style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold,#CB8B2E);margin-bottom:18px;">On the wrist</p>
+          <h2 style="font-weight:800;font-size:clamp(32px,4.6vw,54px);line-height:0.98;letter-spacing:-0.03em;margin-bottom:18px;color:#F4ECDA;">Leave your phone behind</h2>
+          <p style="font-size:17px;line-height:1.56;color:#C9BCA3;max-width:38ch;margin-bottom:30px;">RockSteady runs natively on Apple Watch. Start a workout, follow your heart rate and log recovery from your wrist — everything syncs back the moment you're done.</p>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;" class="vp-checks">
+            <li style="display:flex;gap:10px;align-items:center;font-size:15px;color:#E5DAC4;font-weight:500;"><span style="color:var(--gold,#CB8B2E);font-weight:800;">✦</span> Start cardio, strength &amp; classes from the wrist</li>
+            <li style="display:flex;gap:10px;align-items:center;font-size:15px;color:#E5DAC4;font-weight:500;"><span style="color:var(--gold,#CB8B2E);font-weight:800;">✦</span> Live heart rate, distance &amp; time — no phone needed</li>
+            <li style="display:flex;gap:10px;align-items:center;font-size:15px;color:#E5DAC4;font-weight:500;"><span style="color:var(--gold,#CB8B2E);font-weight:800;">✦</span> Recovery tools: sauna, cold plunge &amp; meditation</li>
+            <li style="display:flex;gap:10px;align-items:center;font-size:15px;color:#E5DAC4;font-weight:500;"><span style="color:var(--gold,#CB8B2E);font-weight:800;">✦</span> Syncs through your own private iCloud</li>
+          </ul>
+        </div>
+        <div class="vp-watchcluster" style="display:flex;justify-content:center;align-items:center;gap:15px;">
+          <div style="width:148px;flex:none;transform:translateY(30px);"><div style="border-radius:42px;background:linear-gradient(150deg,#5a4a36,#2e2114);padding:7px;box-shadow:0 22px 40px -20px rgba(0,0,0,.6);"><div style="border-radius:36px;overflow:hidden;background:#000;"><img src="assets/img/watch-home.png" alt="Watch home" style="display:block;width:100%;height:auto;"></div></div></div>
+          <div style="width:192px;flex:none;z-index:2;"><div style="position:relative;border-radius:54px;background:linear-gradient(150deg,#63513b,#2e2114);padding:8px;box-shadow:0 34px 58px -26px rgba(0,0,0,.7);"><div style="border-radius:47px;overflow:hidden;background:#000;"><img src="assets/img/watch-live.png" alt="Live tracking" style="display:block;width:100%;height:auto;"></div><span style="position:absolute;right:-4px;top:31%;width:6px;height:28px;border-radius:4px;background:linear-gradient(90deg,#6b573e,#3a2c1c);"></span></div></div>
+          <div style="width:148px;flex:none;transform:translateY(30px);"><div style="border-radius:42px;background:linear-gradient(150deg,#5a4a36,#2e2114);padding:7px;box-shadow:0 22px 40px -20px rgba(0,0,0,.6);"><div style="border-radius:36px;overflow:hidden;background:#000;"><img src="assets/img/watch-recovery.png" alt="Recovery" style="display:block;width:100%;height:auto;"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MINI (badges) -->
+  <section style="max-width:1140px;margin:0 auto;padding:84px 26px 40px;">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;" class="vp-mini">
+      <article style="background:#EBDFC4;border:2.5px solid #3A2E1F;border-radius:18px;padding:28px;box-shadow:4px 4px 0 #3A2E1F;">
+        <div style="width:46px;height:46px;border-radius:50%;background:var(--moss,#3A5A3C);border:2px solid #3A2E1F;display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#EFE6D2" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3v18M5 6c2.5 2 2.5 10 0 12M19 6c-2.5 2-2.5 10 0 12"></path></svg></div>
+        <h3 style="font-weight:800;font-size:20px;letter-spacing:-0.02em;margin-bottom:7px;">Sports Activities</h3>
+        <p style="font-size:14.5px;line-height:1.55;color:#5C4D38;">From basketball to rock climbing, track the activities that make fitness fun.</p>
+      </article>
+      <article style="background:#EBDFC4;border:2.5px solid #3A2E1F;border-radius:18px;padding:28px;box-shadow:4px 4px 0 #3A2E1F;">
+        <div style="width:46px;height:46px;border-radius:50%;background:var(--gold,#CB8B2E);border:2px solid #3A2E1F;display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#3A2E1F" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2.5"></rect><path d="M3 9h18M8 2.5v4M16 2.5v4"></path></svg></div>
+        <h3 style="font-weight:800;font-size:20px;letter-spacing:-0.02em;margin-bottom:7px;">Smart Calendar</h3>
+        <p style="font-size:14.5px;line-height:1.55;color:#5C4D38;">Color-coded days show your journey at a glance — every workout, every rest day.</p>
+      </article>
+      <article style="background:#EBDFC4;border:2.5px solid #3A2E1F;border-radius:18px;padding:28px;box-shadow:4px 4px 0 #3A2E1F;">
+        <div style="width:46px;height:46px;border-radius:50%;background:var(--rust,#A8431E);border:2px solid #3A2E1F;display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#EFE6D2" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"></circle><circle cx="17" cy="9.5" r="2.6"></circle><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5M15 13.6c2.4.2 4.5 1.9 4.5 4.4"></path></svg></div>
+        <h3 style="font-weight:800;font-size:20px;letter-spacing:-0.02em;margin-bottom:7px;">Social Connection</h3>
+        <p style="font-size:14.5px;line-height:1.55;color:#5C4D38;">Share wins with friends who get it. Support and accountability, never leaderboards.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PHOTO BAND 02 -->
+  <section style="position:relative;border-top:3px solid #2C4630;border-bottom:3px solid #2C4630;">
+    <img src="assets/img/photo-lakefront-rest.jpg" alt="A couple resting together on a lakefront path at sunset with the city skyline behind" style="display:block;width:100%;height:clamp(320px,52vh,540px);object-fit:cover;object-position:center 38%;">
+    <div style="position:absolute;left:0;bottom:0;width:100%;padding:18px 26px;background:linear-gradient(180deg,transparent,rgba(28,27,24,.55));">
+      <p style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:#EFE6D2;"><span style="color:var(--gold,#CB8B2E);">Fig. 02</span> — Better with company</p>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY (trail marker) -->
+  <section style="max-width:1140px;margin:0 auto;padding:40px 26px 90px;">
+    <div style="background:var(--moss,#3A5A3C);color:#EFE6D2;border:3px solid #2C4630;border-radius:24px;padding:clamp(40px,6vw,72px);text-align:center;box-shadow:6px 6px 0 #2C4630;">
+      <img src="assets/img/emblem.png" alt="" style="width:108px;height:108px;margin-bottom:22px;filter:drop-shadow(0 6px 12px rgba(0,0,0,.25));">
+      <p style="font-weight:700;font-size:clamp(26px,4vw,46px);line-height:1.1;letter-spacing:-0.025em;margin-bottom:20px;text-wrap:balance;">“There's meaning in the push itself — not just in reaching the top.”</p>
+      <p style="font-size:16px;line-height:1.6;color:#CBD7C2;max-width:42ch;margin:0 auto;">Consistency beats intensity. Show up, do the work, and find a little joy in the climb.</p>
+    </div>
+  </section>
+
+  <!-- CTA (ticket) -->
+  <section style="background:var(--rust,#A8431E);color:#EFE6D2;border-top:3px solid #7E3214;border-bottom:3px solid #7E3214;">
+    <div style="max-width:880px;margin:0 auto;padding:84px 26px;text-align:center;">
+      <p style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:#F2C99B;margin-bottom:22px;">Admit one · Free 7-day trial</p>
+      <h2 style="font-weight:800;font-size:clamp(36px,6vw,72px);line-height:0.94;letter-spacing:-0.03em;margin-bottom:18px;">Ready to start your climb?</h2>
+      <p style="font-size:17.5px;line-height:1.55;color:#F4D9C3;max-width:34ch;margin:0 auto 32px;">Extraordinary results come from ordinary consistency. Lace up.</p>
+      <a href="https://apps.apple.com/app/id6757501581" aria-label="Download on the App Store" style="display:inline-block;text-decoration:none;">
+        <img src="assets/img/appstore-badge-white.svg" alt="Download on the App Store" style="height:54px;width:auto;display:inline-block;">
+      </a>
+      <p style="font-family:'Space Mono',monospace;font-size:11.5px;color:#F2C99B;margin-top:18px;letter-spacing:0.04em;">Then $4.99/mo or $49.99/yr · iPhone &amp; Apple Watch</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="cols">
+      <div class="brandcol">
+        <div class="lockup"><img src="assets/img/emblem.png" alt=""><span class="name">RockSteady</span></div>
+        <p class="tag">Push your rock. Stay steady.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <div class="linklist">
+          <a href="index.html">Home</a>
+          <a href="pages/about.html">About</a>
+          <a href="pages/guide.html">App Guide</a>
+        </div>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <div class="linklist">
+          <a href="pages/privacy.html">Privacy Policy</a>
+          <a href="pages/terms.html">Terms of Service</a>
+          <a href="pages/contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="baseline"><div class="inner"><p>© 2026 RockSteady — All rights reserved.</p></div></div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guide — RockSteady</title>
+<meta name="description" content="Short how-to videos and step-by-step walkthroughs for every part of the app — from your first session to your hundredth.">
+<link rel="icon" href="../assets/img/emblem.png">
+<link rel="stylesheet" href="../css/site.css">
+<style>
+  .step-badge{
+    flex:none;width:34px;height:34px;border-radius:50%;border:2px solid var(--ink);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--mono);font-weight:700;font-size:15px;color:var(--paper);
+  }
+  .video-thumb{
+    position:relative;aspect-ratio:16/10;border-bottom:2.5px solid var(--line);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .play-badge{
+    width:54px;height:54px;border-radius:50%;background:var(--paper);
+    border:2px solid var(--ink);display:flex;align-items:center;justify-content:center;
+    box-shadow:3px 3px 0 var(--ink);
+  }
+  .thumb-dur{
+    position:absolute;bottom:12px;right:12px;font-family:var(--mono);font-size:11px;
+    font-weight:700;color:var(--ink);background:var(--paper);border:2px solid var(--ink);
+    padding:2px 8px;border-radius:999px;
+  }
+  .step-list{list-style:none;display:flex;flex-direction:column;gap:7px;margin-top:14px;}
+  .step-list li{
+    display:flex;gap:9px;align-items:baseline;font-family:var(--mono);
+    font-size:12.5px;line-height:1.4;color:var(--moss);
+  }
+  .step-list li .n{color:var(--rust);font-weight:700;}
+  .faq details{
+    background:var(--card);border:2.5px solid var(--line);border-radius:16px;
+    padding:20px 22px;box-shadow:5px 5px 0 var(--line);
+  }
+  .faq summary{font-weight:800;font-size:17px;letter-spacing:-0.01em;cursor:pointer;list-style:none;color:var(--ink);}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{content:"+";float:right;font-family:var(--mono);color:var(--rust);font-weight:700;}
+  .faq details[open] summary::after{content:"–";}
+  .faq p{font-size:15px;line-height:1.65;color:var(--body);margin-top:12px;}
+  .watch-cluster{display:flex;justify-content:center;align-items:center;gap:16px;}
+  .watch-shot{border-radius:32px;background:var(--brown-dark);padding:7px;border:2px solid var(--ink);box-shadow:5px 5px 0 rgba(0,0,0,.35);}
+  .watch-shot img{display:block;width:100%;height:auto;border-radius:26px;}
+  @media(max-width:900px){
+    .demo-grid{grid-template-columns:1fr !important;}
+    .watch-grid{grid-template-columns:1fr !important;gap:34px !important;}
+    .watch-cluster{order:-1;}
+  }
+  @media(max-width:640px){
+    .watch-cluster{flex-direction:column;}
+    .watch-cluster > div{width:min(180px,64vw) !important;transform:none !important;}
+  }
+</style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="bar">
+      <a href="../index.html" class="brand"><img src="../assets/img/emblem.png" alt="RockSteady"><span>RockSteady</span></a>
+      <nav class="site-nav">
+        <input type="checkbox" id="navmenu" class="nav-cb" hidden>
+        <label for="navmenu" class="nav-burger" aria-label="Toggle menu"><span></span></label>
+        <div class="links">
+          <a href="../index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="guide.html" aria-current="page">Guide</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://apps.apple.com/app/id6757501581" class="cta-pill">Get the app</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <p class="eyebrow">App guide</p>
+    <h1>Getting the most out of RockSteady</h1>
+    <p class="lede">Short how-to videos and step-by-step walkthroughs for every part of the app &mdash; from your first session to your hundredth.</p>
+  </section>
+
+  <!-- GETTING STARTED -->
+  <section class="wrap" style="max-width:1080px;padding-top:40px;padding-bottom:20px;">
+    <h2 style="font-weight:800;font-size:clamp(28px,4.2vw,40px);line-height:1.05;letter-spacing:-0.02em;margin-bottom:8px;">Getting started in three steps</h2>
+    <p style="font-size:16px;color:var(--body);margin-bottom:34px;">You'll be tracking your first session in under two minutes.</p>
+    <div class="grid grid-3">
+      <article class="card">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;"><span class="step-badge" style="background:var(--moss);">1</span><h3 style="margin-bottom:0;">Download &amp; open</h3></div>
+        <p>Grab RockSteady from the App Store and sign in with Apple or email. No setup wizard, no fuss.</p>
+      </article>
+      <article class="card">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;"><span class="step-badge" style="background:var(--gold);color:var(--ink);">2</span><h3 style="margin-bottom:0;">Set a goal</h3></div>
+        <p>Tell the app what you're working toward and it'll shape a plan around your pace &mdash; not someone else's.</p>
+      </article>
+      <article class="card">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;"><span class="step-badge" style="background:var(--rust);">3</span><h3 style="margin-bottom:0;">Log your first session</h3></div>
+        <p>Tap into Workouts or Cardio, record what you did, and watch it land on your home screen. That's it.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FEATURED DEMO -->
+  <section class="wrap" style="max-width:1080px;padding-top:40px;padding-bottom:20px;">
+    <div style="background:var(--moss);color:#EFE6D2;border:2.5px solid var(--line);border-radius:22px;box-shadow:6px 6px 0 var(--line);overflow:hidden;display:grid;grid-template-columns:1.2fr 0.8fr;gap:34px;align-items:center;padding:clamp(28px,4vw,46px);" class="demo-grid">
+      <div>
+        <p class="eyebrow" style="color:#F2C99B;margin-bottom:14px;">Start here · 3 min</p>
+        <h2 style="font-weight:800;font-size:clamp(26px,3.8vw,38px);line-height:1.08;letter-spacing:-0.02em;margin-bottom:14px;color:#F4ECDA;">A full tour of RockSteady</h2>
+        <p style="font-size:16px;line-height:1.62;color:#D8E0CF;margin-bottom:24px;max-width:30em;">The fastest way to learn the app. We'll walk through the home screen, building a workout, tracking cardio and logging recovery &mdash; all in one short video.</p>
+        <a href="#" class="btn-store" style="cursor:pointer;">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="var(--ink)"><path d="M8 5v14l11-7z"/></svg> Watch the tour
+        </a>
+        <p style="font-family:var(--mono);font-size:12px;color:#C6D2BB;margin-top:14px;letter-spacing:0.03em;">Video coming soon &mdash; we're filming the how-to series now.</p>
+      </div>
+      <div style="display:flex;justify-content:center;">
+        <div style="width:100%;max-width:230px;aspect-ratio:9/16;border-radius:26px;background:var(--brown);border:2.5px solid var(--ink);box-shadow:6px 6px 0 var(--moss-dark);display:flex;align-items:center;justify-content:center;">
+          <span class="play-badge" style="width:64px;height:64px;box-shadow:4px 4px 0 var(--ink);"><svg viewBox="0 0 24 24" width="26" height="26" fill="var(--ink)"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW-TO VIDEO GRID -->
+  <section class="wrap" style="max-width:1080px;padding-top:40px;padding-bottom:20px;">
+    <h2 style="font-weight:800;font-size:clamp(28px,4.2vw,40px);line-height:1.05;letter-spacing:-0.02em;margin-bottom:8px;">How-to videos by feature</h2>
+    <p style="font-size:16px;color:var(--body);margin-bottom:34px;">Two-minute walkthroughs for each part of the app. New videos added as the series rolls out.</p>
+    <div class="grid grid-3">
+
+      <article class="card" style="padding:0;overflow:hidden;">
+        <div class="video-thumb" style="background:var(--moss);">
+          <span class="play-badge"><svg viewBox="0 0 24 24" width="22" height="22" fill="var(--ink)"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="thumb-dur">2:10</span>
+        </div>
+        <div style="padding:20px;">
+          <h3 style="margin-bottom:7px;">Build a custom workout</h3>
+          <p>Browse exercises, save a routine, and track sets and reps as you go.</p>
+          <ul class="step-list"><li><span class="n">1 ·</span> Open Workouts → My Custom Workouts</li><li><span class="n">2 ·</span> Add exercises from the library</li><li><span class="n">3 ·</span> Log your sets during the session</li></ul>
+        </div>
+      </article>
+
+      <article class="card" style="padding:0;overflow:hidden;">
+        <div class="video-thumb" style="background:var(--brown);">
+          <span class="play-badge"><svg viewBox="0 0 24 24" width="22" height="22" fill="var(--ink)"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="thumb-dur">1:48</span>
+        </div>
+        <div style="padding:20px;">
+          <h3 style="margin-bottom:7px;">Track cardio with GPS</h3>
+          <p>Start an outdoor run or ride with a live map, or time an indoor session.</p>
+          <ul class="step-list"><li><span class="n">1 ·</span> Open Cardio → choose Outdoor</li><li><span class="n">2 ·</span> Pick Run, Walk, Ruck or Bike</li><li><span class="n">3 ·</span> Tap start and let GPS do the rest</li></ul>
+        </div>
+      </article>
+
+      <article class="card" style="padding:0;overflow:hidden;">
+        <div class="video-thumb" style="background:var(--rust);">
+          <span class="play-badge"><svg viewBox="0 0 24 24" width="22" height="22" fill="var(--ink)"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="thumb-dur">1:32</span>
+        </div>
+        <div style="padding:20px;">
+          <h3 style="margin-bottom:7px;">Log recovery &amp; rest</h3>
+          <p>Record stretching, meditation and rest days so recovery counts too.</p>
+          <ul class="step-list"><li><span class="n">1 ·</span> Open More → Recovery</li><li><span class="n">2 ·</span> Log active recovery or a rest day</li><li><span class="n">3 ·</span> See it reflected on your calendar</li></ul>
+        </div>
+      </article>
+
+      <article class="card" style="padding:0;overflow:hidden;">
+        <div class="video-thumb" style="background:var(--brown);">
+          <span class="play-badge"><svg viewBox="0 0 24 24" width="22" height="22" fill="var(--ink)"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="thumb-dur">2:05</span>
+        </div>
+        <div style="padding:20px;">
+          <h3 style="margin-bottom:7px;">Yoga, Pilates &amp; mobility</h3>
+          <p>Follow guided classes and add mobility work to your week.</p>
+          <ul class="step-list"><li><span class="n">1 ·</span> Open Workouts → Classes</li><li><span class="n">2 ·</span> Choose Yoga, Pilates or Mobility</li><li><span class="n">3 ·</span> Follow along and log it</li></ul>
+        </div>
+      </article>
+
+      <article class="card" style="padding:0;overflow:hidden;">
+        <div class="video-thumb" style="background:var(--moss);">
+          <span class="play-badge"><svg viewBox="0 0 24 24" width="22" height="22" fill="var(--ink)"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="thumb-dur">1:40</span>
+        </div>
+        <div style="padding:20px;">
+          <h3 style="margin-bottom:7px;">Read your progress</h3>
+          <p>Use the calendar and stats to see your consistency compound.</p>
+          <ul class="step-list"><li><span class="n">1 ·</span> Open the Calendar tab</li><li><span class="n">2 ·</span> Tap any color-coded day</li><li><span class="n">3 ·</span> Review streaks and totals</li></ul>
+        </div>
+      </article>
+
+      <article class="card" style="padding:0;overflow:hidden;">
+        <div class="video-thumb" style="background:var(--gold);">
+          <span class="play-badge"><svg viewBox="0 0 24 24" width="22" height="22" fill="var(--ink)"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="thumb-dur">1:25</span>
+        </div>
+        <div style="padding:20px;">
+          <h3 style="margin-bottom:7px;">Connect with friends</h3>
+          <p>Share wins and cheer each other on &mdash; without leaderboards or pressure.</p>
+          <ul class="step-list"><li><span class="n">1 ·</span> Open More → Social</li><li><span class="n">2 ·</span> Add friends and share a post</li><li><span class="n">3 ·</span> Posts auto-delete after 6 months</li></ul>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- APPLE WATCH HOW-TO -->
+  <section class="wrap" style="max-width:1080px;padding-top:40px;padding-bottom:20px;">
+    <div style="background:var(--brown);color:#E6DCC7;border:2.5px solid var(--line);border-radius:22px;box-shadow:6px 6px 0 var(--line);overflow:hidden;padding:clamp(30px,4vw,48px);">
+      <div style="display:grid;grid-template-columns:1fr 1.1fr;gap:44px;align-items:center;" class="watch-grid">
+        <div>
+          <p class="eyebrow" style="color:var(--gold);margin-bottom:14px;">On your wrist</p>
+          <h2 style="font-weight:800;font-size:clamp(26px,3.8vw,38px);line-height:1.08;letter-spacing:-0.02em;margin-bottom:14px;color:#F4ECDA;">Track a session from Apple Watch</h2>
+          <p style="font-size:16px;line-height:1.62;color:#CFC2A6;margin-bottom:24px;max-width:30em;">No phone required. The watch app mirrors everything you can do on iPhone &mdash; and syncs the moment you finish.</p>
+          <ol style="list-style:none;display:flex;flex-direction:column;gap:16px;">
+            <li style="display:flex;gap:14px;align-items:flex-start;font-size:15px;color:#E6DCC7;line-height:1.5;"><span class="step-badge" style="background:var(--moss);width:30px;height:30px;font-size:14px;">1</span> Open RockSteady on your watch and pick Exercise, Weights or Recovery</li>
+            <li style="display:flex;gap:14px;align-items:flex-start;font-size:15px;color:#E6DCC7;line-height:1.5;"><span class="step-badge" style="background:var(--gold);color:var(--ink);width:30px;height:30px;font-size:14px;">2</span> Choose your activity and tap start &mdash; live heart rate, distance and time appear instantly</li>
+            <li style="display:flex;gap:14px;align-items:flex-start;font-size:15px;color:#E6DCC7;line-height:1.5;"><span class="step-badge" style="background:var(--rust);width:30px;height:30px;font-size:14px;">3</span> End the session and it syncs to your iPhone through private iCloud</li>
+          </ol>
+        </div>
+        <div class="watch-cluster">
+          <div class="watch-shot" style="width:148px;flex:none;transform:translateY(24px);"><img src="../assets/img/watch-home.png" alt="Choose a session on Apple Watch"></div>
+          <div class="watch-shot" style="width:180px;flex:none;z-index:2;"><img src="../assets/img/watch-live.png" alt="Live tracking on Apple Watch"></div>
+          <div class="watch-shot" style="width:148px;flex:none;transform:translateY(24px);"><img src="../assets/img/watch-recovery.png" alt="Recovery on Apple Watch"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK FAQ -->
+  <section class="wrap" style="max-width:840px;padding-top:40px;padding-bottom:20px;">
+    <h2 style="font-weight:800;font-size:clamp(28px,4.2vw,40px);line-height:1.05;letter-spacing:-0.02em;margin-bottom:24px;">Quick answers</h2>
+    <div class="faq" style="display:flex;flex-direction:column;gap:14px;">
+      <details><summary>Can I use RockSteady offline?</summary><p>Yes &mdash; tracking workouts and viewing your history work offline, since that data lives on your device. Social features need an internet connection.</p></details>
+      <details><summary>Is my data backed up?</summary><p>Your activity history and GPS routes are kept on your device, and Apple Watch sessions sync through your private iCloud. Deleting the app removes the history stored locally.</p></details>
+      <details><summary>How do I reset my password?</summary><p>Use &ldquo;Forgot Password?&rdquo; on the sign-in screen. If you signed up with Apple, your sign-in is managed by Apple &mdash; there's no separate password.</p></details>
+    </div>
+    <p style="font-size:15px;color:var(--body);margin-top:24px;">Still stuck? Read the <a href="user-guide.html" class="ulink">full user guide</a> or <a href="contact.html" class="ulink">contact support &rarr;</a></p>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band" style="margin-top:40px;">
+    <div class="inner">
+      <h2>Ready to put it into practice?</h2>
+      <p>Download RockSteady and log your first session today.</p>
+      <a href="https://apps.apple.com/app/id6757501581" aria-label="Download on the App Store" style="display:inline-block;text-decoration:none;">
+        <img src="../assets/img/appstore-badge-white.svg" alt="Download on the App Store" style="height:54px;width:auto;display:inline-block;">
+      </a>
+      <p class="fine">Available on iPhone. Android coming later.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="cols">
+      <div class="brandcol">
+        <div class="lockup"><img src="../assets/img/emblem.png" alt=""><span class="name">RockSteady</span></div>
+        <p class="tag">Push your rock. Stay steady.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <div class="linklist">
+          <a href="../index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="guide.html" aria-current="page">App Guide</a>
+        </div>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <div class="linklist">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="baseline"><div class="inner"><p>© 2026 RockSteady — All rights reserved.</p></div></div>
+  </footer>
+
+</body>
+</html>
