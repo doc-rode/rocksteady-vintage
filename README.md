@@ -72,9 +72,18 @@ the corresponding production pages — verified string-for-string against
 Deployed for preview via GitHub Pages at **https://doc-rode.github.io/vintage-preview/**
 (public repo `doc-rode/vintage-preview`). `.nojekyll` serves the files as-is.
 
+Kept out of search two ways:
+1. A `noindex, nofollow` `<meta>` on **every page** — the effective control for a
+   `github.io/<repo>/` project-page URL.
+2. An authoritative `robots.txt` at the **account root** —
+   `doc-rode.github.io/robots.txt` (repo `doc-rode/doc-rode.github.io`) — with
+   `Disallow: /vintage-preview/`. (A `robots.txt` inside this repo would sit at a subpath and be
+   ignored by crawlers, so it lives at the domain root instead.)
+
 > **Before launch:** every page carries `<meta name="robots" content="noindex, nofollow">`
-> (marked `PREVIEW ONLY: remove at launch`) so search engines don't index the preview.
-> **Remove these tags when the site goes to production** so the real site can be indexed.
+> (marked `PREVIEW ONLY: remove at launch`). **Remove these tags at production** so the real
+> site can be indexed (and drop the root `Disallow` if the launch URL stays under
+> `doc-rode.github.io`).
 
 ## Known follow-ups (not copy changes)
 
